@@ -1,0 +1,67 @@
+%+------------------------------------------------------------------------------+
+%| Seitenstil                                                       |
+%+------------------------------------------------------------------------------+
+
+%\renewcommand{\footrulewidth}{0.4pt}
+%\renewcommand{\familydefault}{\sfdefault}
+
+% Kopf und Fußzeile
+% \pagestyle{fancy} 
+
+
+% Überschriftfarbe
+% \sectionfont{\color{darkgray}}
+% \subsectionfont{\color{darkgray}}
+% \subsubsectionfont{\color{darkgray}}
+
+% Bildtitel
+\newcommand*{\figuretitle}[1]{\textit{#1}\par}
+
+% Zitate mit Autor
+\let\oldquote\quote
+\let\endoldquote\endquote
+
+\RenewDocumentEnvironment{quote}{om}
+{\oldquote}
+{\par\nobreak\smallskip
+	\hfill(#2\IfValueT{#1}{~---~#1})\endoldquote 
+	\addvspace{\bigskipamount}}
+
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+
+\definecolor{darkgreen}{RGB}{0,150,0}
+\definecolor{red}{RGB}{200,0,0}
+
+\lstset{literate=%
+	{Ö}{{\"O}}1
+	{Ä}{{\"A}}1
+	{Ü}{{\"U}}1
+	{ß}{{\ss}}1
+	{ü}{{\"u}}1
+	{ä}{{\"a}}1
+	{ö}{{\"o}}1
+}
+
+\lstdefinestyle{codestyle}{
+	showspaces=false,
+	showtabs=false,
+	breaklines=true,
+	showstringspaces=false,
+	breakatwhitespace=true,
+	commentstyle=\color{pgreen},
+	keywordstyle=\color{pblue},
+	stringstyle=\color{pred},
+	basicstyle=\ttfamily,
+	moredelim=[il][\textcolor{pgrey}]{\$\$},
+	moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%},
+	autogobble=true,
+	numbers=left, 
+	numberstyle=\small, 
+	numbersep=-30pt,
+	language=java,
+	tabsize=3,
+	xleftmargin=-30pt
+}
