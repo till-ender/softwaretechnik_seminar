@@ -2,10 +2,49 @@
 
 \section{Seminar 2 - Anforderungsanalyse}
 
-	\subsection{Aufgabe 1 - Pflichtenheft}
-	
-	\subsection{Aufgabe 2 - Anforderungsdefinition}
-	
-	\subsection{Aufgabe 3 - Use-Case-Diagramme}
-	
+\subsection{Aufgabe 1 - Pflichtenheft}
+
+\subsection{Aufgabe 2 - Anforderungsdefinition}
+\begin{center}
+	\begin{tabular}{|m{1cm}|m{4cm}|m{8cm}|m{2cm}|}
+		\hline
+		ID & Bezeichner & Beschreibung & Priorität \\
+		\hline
+		NF01 & Benzinverbrauchs-klassen & Es gibt 3 Benzinverbrauchsklassen. Jede Benzinklasse ist durch eine anders gefärbte Plakette gekennzeichnet. & Muss \\
+		\hline
+		NF02 & Autos & Objekte, die sich mit gleichbleibender Geschwindigkeit und Richtung über den Bildschirm bewegen. Es sollen nicht alle Autos die gleiche Geschwindigkeit haben. Außerdem ist jedes Auto genau einer der drei Benzinverbrauchsklassen zugeordnet. & Muss \\
+		\hline
+		NF03 & Abgaswolken & Jedes Auto stößt eine Abgaswolke aus. Die Größe/ Intensität einer Abgaswolke stimmt mit dem Benzinverbrauch des zugehörigen Autos überein. & Muss \\
+		\hline
+		NF04 & Plakette & Jedes Auto ist durch eine farbige Plakette gekennzeichnet. Die Plakettenfarbe soll nicht immer mit der tatsächlichen Verbrauchsklasse des Autos übereinstimmen, damit der Anwender einige Farben erst richtig zuordnen muss. & Muss \\
+		\hline 
+		NF05 & Hindernisse & Es gibt einige Objekte (z.B. Bäume), die für kurze Zeit die Sicht auf ein Auto verdecken, wenn es aus Anwenderperspektive hinter dem Objekt entlang fährt. & Muss \\
+		\hline
+		NF06 & Punktestand & Der aktuelle Punktestand soll gespeichert und oben auf dem Bildschirm angezeigt werden. & Muss \\
+		\hline
+		NF07 & Leben des Spielers & Der Spieler startet das Spiel mit 3 Leben. Die verbliebenen Leben werden oben rechts auf dem Bildschirm angezeigt. & Muss \\
+		\hline
+		NF08 & Level & Es soll unterschiedliche Level geben, die sich durch die Anzahl und Anordnung der Hindernisse, sowie die Anzahl und Geschwindigkeiten der Autos unterscheiden. & Muss \\
+		\hline
+	\end{tabular}
+	\begin{tabular}{|m{1cm}|m{4cm}|m{8cm}|m{2cm}|}
+		\hline
+		ID & Bezeichner & Beschreibung & Priorität \\
+		\hline
+		F01 & Startbildschirm & Beim Start des Spiels soll ein Startbildschirm mit einer Spielanleitung angezeigt werden, bis der Spieler die linke Maustaste betätigt. & Muss \\
+		\hline
+		F02 & Plakette ändern & Wird die Plakette eines Autos durch den Anwender angeklickt, soll sich die Farbe der Plakette ändern. & Muss \\
+		\hline
+		F03 & Überprüfen der Plakettenzuweisung & Sobald ein Auto den Bildschirm überquert hat und den Rand "berührt", soll überprüft werden, ob die Plakettenfarbe mit der Verbrauchklasse des Autos übereinstimmt. Falls nicht, verliert der Spieler ein Leben. & Muss \\
+		\hline
+		F04 & Spielende beim Verlust des letzten Lebens & Sobald der Spieler sein letztes Leben verliert, wird das Spiel beendet und der Punktestand angezeigt. & Muss \\
+		\hline
+		F05 & Level beenden & Sobald der Spieler eine definierte Punktzahl erreicht hat, wird das aktuelle Level beendet und das nächste Level gestartet. Ist das letzte (3.) Level erfolgreich absolviert, wird das Spiel beendet und der Punktestand angezeigt & Muss \\
+		\hline
+		F06 & Spiel unterbrechen & Der Spieler soll die Möglichkeit haben, das Spiel über die ESC-Taste zu Pausieren. Es soll dann die Möglichkeit geben, das Spiel fortzusetzen, oder zu beenden. & Kann \\
+		\hline
+	\end{tabular}
+\end{center}
+\subsection{Aufgabe 3 - Use-Case-Diagramme}
+
 %\end{fullpage}

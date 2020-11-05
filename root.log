@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.13)  27 OCT 2020 12:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.13)  5 NOV 2020 14:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1534,72 +1534,107 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \openout2 = `./content/02_seminar.aux'.
 
 
-(./content/02_seminar.tex) [3
+(./content/02_seminar.tex
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+[]|\T1/lmr/m/n/12 Benzinverbrauchs-
+ []
 
 
-]
+Underfull \hbox (badness 1803) in paragraph at lines 13--13
+[]|\T1/lmr/m/n/12 Es gibt 3 Ben-zin-ver-brauchs-klas-sen. Je-de
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 38--38
+[]|\T1/lmr/m/n/12 Überprüfen der Pla-
+ []
+
+
+Underfull \hbox (badness 2213) in paragraph at lines 40--40
+[]|\T1/lmr/m/n/12 Spielende beim Ver-
+ []
+
+
+Overfull \hbox (94.38661pt too wide) in paragraph at lines 9--47
+ [] 
+ []
+
+
+Overfull \hbox (94.38661pt too wide) in paragraph at lines 9--47
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3
+
+
+])
+[4]
 \openout2 = `./content/03_04_seminar.aux'.
 
- (./content/03_04_seminar.tex) [4
+ (./content/03_04_seminar.tex) [5
 
 
 ]
 \openout2 = `./content/05_seminar.aux'.
 
-
-(./content/05_seminar.tex) [5
+ (./content/05_seminar.tex) [6
 
 
 ]
 \openout2 = `./content/06_seminar.aux'.
 
- (./content/06_seminar.tex) [6
+
+(./content/06_seminar.tex) [7
 
 
 ]
 \openout2 = `./content/07_seminar.aux'.
 
-
-(./content/07_seminar.tex) [7
+ (./content/07_seminar.tex) [8
 
 
 ]
 \openout2 = `./index/abbreviations.aux'.
 
- (./index/abbreviations.tex) [8
+
+(./index/abbreviations.tex) [9
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
- (./root.aux
-(./content/00_cover_sheet.aux) (./content/01_seminar.aux)
-(./content/02_seminar.aux) (./content/03_04_seminar.aux)
-(./content/05_seminar.aux) (./content/06_seminar.aux) (./content/07_seminar.aux
-) (./index/abbreviations.aux))
+ (./root.aux (./content/00_cover_sheet.aux)
+(./content/01_seminar.aux) (./content/02_seminar.aux)
+(./content/03_04_seminar.aux) (./content/05_seminar.aux)
+(./content/06_seminar.aux) (./content/07_seminar.aux)
+(./index/abbreviations.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
 Package rerunfilecheck Info: File `root.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 33603 strings out of 481242
- 638139 string characters out of 5921895
- 1076821 words of memory out of 5000000
- 48110 multiletter control sequences out of 15000+600000
+ 33611 strings out of 481242
+ 638235 string characters out of 5921895
+ 1086821 words of memory out of 5000000
+ 48117 multiletter control sequences out of 15000+600000
  597813 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,11n,109p,10099b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,11n,109p,10099b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<c:/texlive/2019/tex
 mf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type
 1/public/lm/lmcsc10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10
 .pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/20
-19/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2019/texmf-dist/font
-s/type1/public/lm/lmssbx10.pfb>
-Output written on root.pdf (8 pages, 181893 bytes).
+19/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2019/texmf-dist/font
+s/type1/public/lm/lmri12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/
+lmssbx10.pfb>
+Output written on root.pdf (9 pages, 205772 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
+ 175 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
  186 words of extra memory for PDF output out of 10000 (max. 10000000)
 
