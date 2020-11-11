@@ -128,6 +128,10 @@
 }
 
 \theoremstyle{mystyle}{
+  \newtheorem*{code}{Quelltext}
+}
+
+\theoremstyle{mystyle}{
   \newtheorem{definition}{Definition}[section]
 }
 
@@ -154,6 +158,76 @@
 \theoremstyle{definition}{
     \newtheorem*{exercise}{Übung}}
 
+\theoremstyle{mystyle}{
+  \newtheorem*{aufgabe}{Aufgabenstellung}
+}
+
+\theoremstyle{mystyle}{
+  \newtheorem*{loesung}{Lösung}
+}
+
+\tcolorboxenvironment{code}{
+  % boxrule=0pt,
+  % boxsep=2pt,
+  % colback={White!90!Salmon},
+  % enhanced jigsaw, 
+  % borderline west={2pt}{0pt}{Salmon},
+  % sharp corners,
+  % before skip=10pt,
+  % after skip=10pt,
+  % breakable,
+  boxrule=0pt,
+  boxsep=2pt,
+  blanker,
+  borderline west={2pt}{0pt}{Salmon},
+  before skip=10pt,
+  after skip=10pt,
+  left=12pt,
+  right=12pt,
+  breakable,
+}
+
+\tcolorboxenvironment{aufgabe}{
+  % boxrule=0pt,
+  % boxsep=2pt,
+  % colback={White!90!Cerulean},
+  % enhanced jigsaw, 
+  % borderline west={2pt}{0pt}{Cerulean},
+  % sharp corners,
+  % before skip=10pt,
+  % after skip=10pt,
+  % breakable,
+  boxrule=0pt,
+  boxsep=2pt,
+  blanker,
+  borderline west={2pt}{0pt}{Cerulean},
+  before skip=10pt,
+  after skip=10pt,
+  left=12pt,
+  right=12pt,
+  breakable,
+}
+
+\tcolorboxenvironment{loesung}{
+  % boxrule=0pt,
+  % boxsep=2pt,
+  % colback={White!90!Dandelion},
+  % enhanced jigsaw, 
+  % borderline west={2pt}{0pt}{Dandelion},
+  % sharp corners,
+  % before skip=10pt,
+  % after skip=10pt,
+  % breakable,
+  boxrule=0pt,
+  boxsep=2pt,
+  blanker,
+  borderline west={2pt}{0pt}{Dandelion},
+  before skip=10pt,
+  after skip=10pt,
+  left=12pt,
+  right=12pt,
+  breakable,
+}
 
 \tcolorboxenvironment{definition}{
   boxrule=0pt,

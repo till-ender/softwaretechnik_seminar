@@ -14,6 +14,29 @@
 % \subsectionfont{\color{darkgray}}
 % \subsubsectionfont{\color{darkgray}}
 
+\RedeclareSectionCommand[
+    beforeskip=-1\baselineskip,
+    afterskip=0.1\baselineskip]{section}
+
+\RedeclareSectionCommand[
+    beforeskip=-1\baselineskip,
+    afterskip=0.7\baselineskip]{subsection}
+
+\renewcommand{\theFancyVerbLine}{\sffamily\textcolor[rgb]{0.0,0.0,0.0}{\scriptsize\oldstylenums{\arabic{FancyVerbLine}}}      }
+\newminted{sql}{autogobble, mathescape, xleftmargin=10pt, linenos, numbersep=5pt, breaklines}
+
+\newcommand{\Aufgabe}[1]{
+    {
+        \vspace*{0.5cm}
+        \begin{large}
+            \textsf{\textbf{Aufgabe #1}}
+        \end{large}
+        \vspace*{0.2cm}
+    }
+}
+
+\setlength{\parindent}{0em}
+
 % Bildtitel
 \newcommand*{\figuretitle}[1]{\textit{#1}\par}
 
