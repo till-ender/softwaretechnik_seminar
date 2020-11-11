@@ -35,12 +35,17 @@
                 \setlength\itemsep{0.1px}
                 \item  Welche Instrumente der Projektplanung bietet die Plattform Github und was sind
                 deren wichtigste Funktionen und Eigenschaften?
-                \item Welche Personengruppen können am Prozess der Projektplanung beteiligt sein?
+                \item Welche Personengruppen können am Prozess der Projektplanung beteiligt sein?
+
             \end{enumerate}
         \end{aufgabe}
     
         \begin{loesung}\:
-            
+            \\[-.7cm]\begin{enumerate}[(a)]
+                \setlength\itemsep{0.1px}
+                \item Neben allgemeinen Code-Verwaltungs-Features von git, bietet Github noch viele weitere Dienste, die unter anderem auch der Projektplanung dienen. In einem Github Repository besteht ebenfalls die Möglichkeit, Aufgabenlisten hinzufügen, welche dazu dienen dass Aufgaben geplant und der Fortschritt verfolgt werden können. Außerdem kann eine Wiki für das Repository erstellt werden um unter anderem eine Roadmap des Projektes zu erstellen oder die Software zu dokumentieren.
+                \item Am Prozess der Projektplanung kann im Prinzip jeder teilnehmen, falls dies nicht weiter restriktiert ist.
+            \end{enumerate}
         \end{loesung}
 	
     
@@ -61,7 +66,40 @@
         \end{aufgabe}
     
         \begin{loesung}\:
+            \\[-.7cm]\begin{enumerate}[(a)]
+                \setlength\itemsep{0.1px}
+                \item Eine Versionsverwaltung ist ein System, welches die Aufgabe übernimmt Änderungen im Code/in den Daten/in Dokumenten zu erkennen und diese in unterschiedlichen Entwicklungsversionen zu archivieren. Dabei sollte ein solches technisches System folgende Funktionen aufweisen:
+                \\[-.7cm]\begin{itemize}
+                    \setlength\itemsep{0.1px}
+                    \item Protokollierung der Änderungen/Versionen erstellen - Verfolgt den Fortschritt des Projektes und erlaubt es nachzuvollziehen, wer und wann etwas verändert wurde
+                    \item Archivierung Programmzustände: Erstellt Versionen des Projekt zu sinnvollen Zeitpunkten
+                    \item Wiederherstellung/Backups: Möglichkeit auf eine ältere Version zurückzugreifen falls notwendig
+                    \item Entwicklungszweige: Möglichkeit für mehrere Programmierer auf unterschiedlichen Zweigen gleichzeitig zu arbeiten und später zusammenzufügen
+                \end{itemize}
             
+                \item \:
+                \begin{highlighting}[Branch]
+                    Ein Branch ist eine Verzweigung/Abzweigung einer Version, um an einem dem Branch entsprechenden Feature zu arbeiten. Er repräsentiert also in anderen Worten eine unabhängige Entwicklungslinie, in der verschiedene Funktionen isoliert voneinander entwickelt werden können.
+                \end{highlighting}
+            
+                \begin{highlighting}[Checkout]
+                    Mit einem Checkout kann man zwischen zuvor erstellten Zweigen wechseln.
+                \end{highlighting}
+            
+                \begin{highlighting}[Pull-Request]
+                    Mit einem Pull-Request können unabhängige Entwickler oder Teammitglieder den für dieses Projekt Zuständigen Entwicklern mitteilen, dass ein Feature fertig entwickelt wurde. Diese können dann den Code überprüfen und freigeben, dass der Zustand mit einem anderen Branch gemerged (zusammengefügt) wird.
+                \end{highlighting}
+            
+                \begin{highlighting}[Merge]
+                    Dieser Befehlt erlaubt es, zwei unabhängige Branches (Entwicklungslinien) in einen Einzigen zu überführen bzw. zusammenzufügen. Dabei wird darauf geachtet, dass keine Konflikte entstehen und falls doch, muss ein Entwickler manuell eingreifen.
+                \end{highlighting}
+            
+                \begin{highlighting}[Tags]
+                    Mit einem Tag kann ein bestimmter Zustand im Projektverlauf (eine Version) markiert werden können, da diese relevanter sind als andere. Typischerweise werden damit richtige Softwareversionen (Releases) gekennzeichnet, damit auf diese einfacher zugegriffen werden kann (Viele kleine commits, aber nur die wichtigsten kennzeichnen).
+                \end{highlighting}
+            
+                \item Es sollten so viele Versionen wie möglich erstellt werden mit eindeutigen Beschreibungen, da somit ein genauer Überblick über das Projekt entsteht und eventuelle Fehler die sich eingeschlichen haben schneller identifiziert werden können.
+            \end{enumerate}
         \end{loesung}
 	
     
@@ -72,7 +110,11 @@
         \end{aufgabe}
     
         \begin{loesung}\:
-            
+            \begin{highlighting}[IDE]
+                Eine Software-Entwicklungsumgebung (engl. Integrated Development Environment) besteht aus einer strukturierten Menge integrierter Werkzeuge und Bausteine (Softwarewerkzeuge), die Entwickler bei der Softwareentwicklung bei anfallenden Tätigkeiten unterstützen sollen.
+            \end{highlighting}
+            Die wichtigsten Funktionen sind dabei folgende: Quellcode-Editor (Programmierung mit Syntaxhervorhebung, Autovervollständigung, Syntax-Prüfung), Automatisierung lokaler Builds (Kompilierungsprozess) und ein Debugger (Programm manuell durchlaufen um Fehler zu finden). Dabei kann eine IDE jedoch alle möglichen Softwaretools beinhalten, denn das Ziel ist es die Effizienz des Entwicklers zu steigern.\\[.3cm]
+            Eine IDE steigert die Effizienz der Entwickler durch das Anbieten vieler integrierten Funktionen aus unterschiedlichen Bereichen (Dokumentation, Codeverwaltung, etc.). Sie können also (je nach IDE) in jedem Zustand des Entwicklungsprozess eine Abhilfe schaffen.
         \end{loesung}
 	
     
@@ -88,7 +130,20 @@
         \end{aufgabe}
     
         \begin{loesung}\:
-            
+            \\[-.7cm]\begin{enumerate}[(a)]
+                \setlength\itemsep{0.1px}
+                \item 
+                \begin{itemize}
+                    \setlength\itemsep{0.1px}
+                    \item Methodendokumentation - Grundlagen der Software (Modellierung, UML)
+                    \item Programmiererdokumentation - Beschreibung Quelltext (Code-Editor mit Syntax Highlighting)
+                    \item Installationsdokumentation - Erforderliche Hardware, Software, Prozeduren der Installation (Installationsprogramm)
+                    \item Benutzerdokumentation - Informationsmaterial für Endbenutzer
+                    \item Datendokumentation - Informationen über die Daten
+                    \item Entwicklungsdokumentation - Information einzelner Versionen, Changelogs (Git, Github)
+                \end{itemize}
+                \item Durch ein Modell erstellt man eine Abstraktion eines Systems, wobei irrelevante Informationen vorerst ausgelassen werden, um sich auf die wichtigen Informationen zu konzentrieren. Dadurch wird der Grundstein des Projektes gelegt, welches nach und nach verfeinert werden können (Großes Projekt nach und nach verfeinern, da auf einmal zu komplex um zu überblicken). UML ist nun ein grafisches Beschreibungsmittel für die Aspekte des Softwareentwurf und können zur Spezifikation, Konstruktion, zum Entwurf, Visualisierung oder auch zur Dokumentation von Software genutzt werden; also eine allgemeine Beschreibung zur Modellierung von Systemen.
+            \end{enumerate}
         \end{loesung}
 	
 %\end{fullpage}
